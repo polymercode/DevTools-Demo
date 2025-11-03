@@ -151,7 +151,6 @@ function setupDebugButton() {
         // Trigger another API call
         fetchAPIData();
         
-        alert('Customer data refreshed! Check console for details');
     });
 }
 
@@ -161,15 +160,14 @@ function setupProfileIcon() {
     
     profileIcon.addEventListener('click', () => {
         console.log('profile clicked');
-        
-        alert('Hello! Welcome to my store');
+
     });
     
     // Log if image fails to load
     profileIcon.addEventListener('error', () => {
         console.warn('image failed to load');
         // Set a fallback
-        profileIcon.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Ccircle cx="50" cy="50" r="50" fill="%234285F4"/%3E%3Ctext x="50" y="50" font-size="40" text-anchor="middle" dy=".3em" fill="white"%3E👤%3C/text%3E%3C/svg%3E';
+        profileIcon.src = 'https://github.com/AlapanDas.png" viewBox="0 0 100 100"%3E%3Ccircle cx="50" cy="50" r="50" fill="%234285F4"/%3E%3Ctext x="50" y="50" font-size="40" text-anchor="middle" dy=".3em" fill="white"%3E👤%3C/text%3E%3C/svg%3E';
     });
 }
 
