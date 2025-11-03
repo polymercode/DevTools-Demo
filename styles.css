@@ -255,6 +255,10 @@ body {
     color: var(--white);
 }
 
+a {
+    color: var(--light-gray);
+    text-decoration: none;
+}
 .footer-hint {
     color: var(--google-yellow);
     font-weight: 500;
